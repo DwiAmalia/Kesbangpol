@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:id="@+id/layoutPrivacy"
+        tools:context=".PrivacyActivity"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kebijakan Privasi"
+            android:fontFamily="@font/twentieth_century"
+            android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="36sp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line1"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tv"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line2"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line1"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line3"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line2"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line4"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line3"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="Informasi yang kami kumpulkan"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line4"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line6"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line5"
+            tools:layout_editor_absoluteX="24dp" />
+        <TextView
+            android:id="@+id/tvPrivacy_line7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="MengapaKami memproses data anda"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line6"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line8"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line7"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line9"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line8"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="Informasi Keamanan"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line9"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line11"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line10"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="Pengungkapan Hukum"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line11"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line13"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line12"
+            tools:layout_editor_absoluteX="24dp" />
+
+        <TextView
+            android:id="@+id/tvPrivacy_line14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="Kontak Informasi"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line13"
+            tools:layout_editor_absoluteX="24dp" />
+        <TextView
+            android:id="@+id/tvPrivacy_line15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/twentieth_century"
+            android:text="@string/line15"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            android:justificationMode="inter_word"
+            app:layout_constraintTop_toBottomOf="@+id/tvPrivacy_line14"
+            tools:layout_editor_absoluteX="24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

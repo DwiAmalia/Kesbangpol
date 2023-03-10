@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".login">
 
-    <TextView
-        android:id="@+id/logo_app"
+    <ImageView
+        android:id="@+id/ic_fo"
         android:layout_width="120dp"
         android:layout_height="120dp"
-        android:background="@drawable/ic_home_black_24dp"
+        android:background="@drawable/ic_launcher_foreground"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"

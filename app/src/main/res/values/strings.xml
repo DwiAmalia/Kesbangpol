@@ -4,4 +4,18 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+
+
+    //privacy privacy
+    <string name="line1">Selamat datang di Aplikasi Klepon. Kami menyambut Anda untuk berpartisipasi dalam layanan Kami.</string>
+    <string name="line2">Klepon dimiliki dan dioperasikan oleh Pemerintah Daerah Kabupaten Pringsewu. Kami berkomitmen untuk menghormati dam melindungi privasi atas informasi Pribadi pengguna sesuai dengan Kebijakan Privasi.</string>
+    <string name="line3">Kami telah mengadopsi Kebijakan Privasi ini, yang menentukan bagaimana kami memproses informasi yang dikumpulkan oleh Aplikasi, yang juga memberikan alasan mengapa kami harus mengumpulkan data pribadi tertentu tentang Anda. Oleh karena itu, Anda harus membaca Kebijakan Privasi ini sebelum menggunakan Aplikasi Klepon.</string>
+    <string name="line4">Kami menjaga data pribadi Anda dan berjanji untuk menjamin kerahasiaan dan keamanannya.</string>
+    <string name="line6">Saat Anda mengunjungi Aplikasi, Kami secara otomatis mengumpulkan informasi tetentu tentang perangkat Anda. Kami meyebut informasi yang dikumpulkan secara otomatis ini</string>
+    <string name="line8">Prioritas utami Kami adakah keamanan data Pengguna dengan demikian Kami hanya dapat memproses data Pengguna minimal, hanya sebanyak yang benanr-benarb diperlukan untuk memelihara Aplikasi. Informasi yang dikumpulkam secara otomatis hanya digunakan untuk mengidentifikasi potensi kasus penyalahgunaan dan menetapkan informasi statistik terkait dengan pengunaan Aplikasi. informasi statistik ini tidak dikumpulkan sedemikian rupa sehingga akan mengindetifikasi Pengguna tertu dari sistem.</string>
+    <string name="line9">Anda dapat mengunjungi Aplikasi tanpa memberi tahu kami siapa Anda atau menggungkapkan informasi apa pun, yang dengannya seseorang dapat mengidentifikasi Anda sebagai individu tertentu yang dapat diidentifikasi. Namun, jika Anda ingin menggunakan data pribadi kepada kami, seperti email Anda, Nama, Tempat tanggal lahir, Nomor Ttelephone. Anda dapat memilih untuk tidak memberikan data pribadu Anda kepada Kami, tetapi kemungkinan Anda tidak dapat memanfaatkan beberapa fitur Aplikasi. Pengguna yang tidak yakin tentang informasi apa yang wajib dipersilakan untuk menghubumgi Kami melalui dev@pringsewukab.go.id</string>
+    <string name="line11">Kami mengamankan informasi yang Anda berikan di server komputer dalam lingkungan yang dkenadili dan aman, terlindungi dari akses, penggunaan atau pengungkapan yang tidak sah. kami menjaga pengamanan administratif, teknis, dan fisik yang wajar untuk melindungi dari akses penggunaan, modifikasi, dan pengungkapan data tidak sah dalam kendali dan penyimpanannya. Namun, tidak ada transmisi data melalui Internet atau jaringan nirkabel yang dapay dijamin.</string>
+    <string name="line13">Kami akan menfungkapjan informasi apa pun yang kami kumpulkan, gunakan atau terima jika diperlukan atau diizinkan oleh hukum, seperti untuk mematuhi penggilan pengadilan atau proses hukum serupa dan ketika kami yakin dengan itikad baik bahwa pengungkapan diperlukan untuk melindungi keselamatan Anda atau keselamatan orang lain, menyelidiki penipuan, atau menanggapi permintaan pemerintah.</string>
+    <string name="line15">Jika Anda ingin menghubungi Kami untuk memahami lebih lanjut tentang Kebijakan ini atau ingin menghubungi Kami mengenai segala hal yang berkaitan dengan hak individu dan Infornasi Pribadi Anda. Anda dapat mengirimkan email ke dev@pringseukab.go.id</string>
+
 </resources>
