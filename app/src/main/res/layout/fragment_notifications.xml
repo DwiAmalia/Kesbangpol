@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:background="@color/white"
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="24dp"
+    android:id="@+id/profil"
     tools:context=".ui.notifications.NotificationsFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,159 +17,210 @@
             android:id="@+id/tv1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/twentieth_century"
             android:text="Profil"
-            android:textColor="@color/black"
-            android:textSize="32sp"
+            android:fontFamily="@font/twentieth_century"
             android:textStyle="bold"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="36sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-
         <ImageView
-            android:id="@+id/imageProfile"
+            android:id="@+id/foto"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="36dp"
             android:src="@drawable/ic_baseline_person_24"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.527"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv1" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_margin="20dp"
-            android:background="@color/white"
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="15dp"
-            android:elevation="9dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageProfile"
-            android:layout_marginBottom="20dp">
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/foto">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <TextView
+                android:id="@+id/name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp">
+                android:layout_marginLeft="50dp"
+                android:text=""
+                android:fontFamily="@font/twentieth_century"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
-                <ImageView
-                    android:id="@+id/icon_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_person_24"
-                    tools:ignore="MissingConstraints" />
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="?android:attr/colorBackground"
+                android:src="@drawable/ic_baseline_person_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="?android:attr/textColorPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/name"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/twentieth_century"
-                    android:text="Nama"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/icon_name"
-                    tools:ignore="MissingConstraints" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ubahSandi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/nama">
 
+            <TextView
+                android:id="@+id/nip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text=""
+                android:fontFamily="@font/twentieth_century"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
-                <ImageView
-                    android:layout_marginTop="25dp"
-                    android:id="@+id/icon_id"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_person_24"
-                    app:layout_constraintHorizontal_bias="0.527"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/icon_name"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_person_24"
+                android:backgroundTint="?android:attr/colorBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:tint="?android:attr/textColorPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/nik"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/twentieth_century"
-                    android:text="NIK"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="30dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/icon_id"
-                    app:layout_constraintTop_toBottomOf="@id/name" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ubahPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ubahSandi">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Ubah Kata Sandi"
+                android:fontFamily="@font/twentieth_century"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
-                <ImageView
-                    android:layout_marginTop="25dp"
-                    android:id="@+id/icon_addres"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_location_on_24"
-                    app:layout_constraintHorizontal_bias="0.527"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/icon_id"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:backgroundTint="?android:attr/colorBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="?android:attr/textColorPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-                <TextView
-                    android:id="@+id/addres"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/twentieth_century"
-                    android:text="Alamat"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="30dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/icon_id"
-                    app:layout_constraintTop_toBottomOf="@id/nik" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tentangAplikasi"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@id/view">
 
-                <ImageView
-                    android:layout_marginTop="25dp"
-                    android:id="@+id/icon_phone"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_baseline_phone_24"
-                    app:layout_constraintHorizontal_bias="0.527"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/icon_addres"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Tentang Aplikasi"
+                android:fontFamily="@font/twentieth_century"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
-                <TextView
-                    android:id="@+id/phone"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/twentieth_century"
-                    android:text="No Handphone"
-                    android:textColor="@color/black"
-                    android:textSize="15dp"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="30dp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/icon_phone"
-                    app:layout_constraintTop_toBottomOf="@id/addres" />
+            <ImageButton
+                android:id="@+id/button1"
+                android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:backgroundTint="?android:attr/colorBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="?android:attr/textColorPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@id/ubahPassword" />
 
-                <Button
-                    android:id="@+id/button_edit"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Edit Profil"
-                    android:textStyle="bold"
-                    android:fontFamily="@font/twentieth_century"
-                    app:layout_constraintStart_toEndOf="@+id/phone"
-                    app:layout_constraintTop_toBottomOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/kebijakanPrivasi"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tentangAplikasi">
 
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Kebijakan Privasi"
+                android:fontFamily="@font/twentieth_century"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
+            <ImageButton
+                android:id="@+id/button2"
+                android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:backgroundTint="?android:attr/colorBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="?android:attr/textColorPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/logout1"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/kebijakanPrivasi">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:fontFamily="@font/twentieth_century"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <ImageButton
+                android:id="@+id/logout"
+                android:onClick="onClick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:backgroundTint="?android:attr/colorBackground"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:tint="?android:attr/textColorPrimary" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+
+</LinearLayout>
