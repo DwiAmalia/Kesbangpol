@@ -118,6 +118,22 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+
+            <TextView
+                android:onClick="ForgetPassword"
+                android:id="@+id/tvForgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lupa Password"
+                android:fontFamily="@font/twentieth_century"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv4"
+                />
+
+
             <Button
                 android:id="@+id/login"
                 android:onClick="Masuk"
@@ -129,7 +145,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tv4"
+                app:layout_constraintTop_toBottomOf="@id/tvForgetPassword"
                 tools:ignore="OnClick" />
 
             <TextView
