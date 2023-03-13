@@ -1,10 +1,11 @@
-package id.go.pringsewukab.kesbangpol;
+package id.go.pringsewukab.kesbangpol.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 
+import id.go.pringsewukab.kesbangpol.R;
 import id.go.pringsewukab.kesbangpol.databinding.ActivityPrivacyBinding;
 
 public class PrivacyActivity extends AppCompatActivity {

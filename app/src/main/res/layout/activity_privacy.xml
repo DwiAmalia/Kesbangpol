@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="top"
         android:id="@+id/layoutPrivacy"
-        tools:context=".PrivacyActivity"
+        tools:context=".ui.PrivacyActivity"
         android:padding="24dp">
 
         <TextView
