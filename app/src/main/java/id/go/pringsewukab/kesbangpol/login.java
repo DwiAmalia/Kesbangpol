@@ -18,6 +18,7 @@ public class login extends AppCompatActivity {
     TextView tvForgetPass;
     TextInputEditText inputUsername, inputPassword;
     Button btnLogin;
+    String username, password;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -57,8 +58,16 @@ public class login extends AppCompatActivity {
                     });
                     alertDiaglog.show();
                 }
+                else {
+                    //create method login
+                    loginUser(username, password);
+                }
             }
         });
 
+    }
+
+    //api login
+    private void loginUser(String username, String password) {
     }
 }
